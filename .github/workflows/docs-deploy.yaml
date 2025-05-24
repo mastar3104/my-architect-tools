@@ -8,7 +8,7 @@ permissions:
   contents: 'write'
 
 jobs:
-  unit-test:
+  docs-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -24,4 +24,5 @@ jobs:
         run: |
           npm ci
           npm run deploy
-
+        env:
+          GItHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
