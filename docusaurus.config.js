@@ -68,9 +68,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Tools',
+        title: 'Home',
         logo: {
           alt: 'mastar3104 Logo',
           src: 'img/kani2.png',
@@ -84,7 +84,19 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'templateSidebar',
+            sidebarId: 'designSidebar',
+            position: 'left',
+            label: 'Design',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'booksSidebar',
+            position: 'left',
+            label: 'Books',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'templatesSidebar',
             position: 'left',
             label: 'Template',
           },
@@ -103,8 +115,20 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Tools',
+                to: '/docs/tools/about',
+              },
+              {
+                label: 'Design',
+                to: '/docs/design/about',
+              },
+              {
+                label: 'Books',
+                to: '/docs/books/about',
+              },
+              {
+                label: 'Template',
+                to: '/docs/templates/about',
               },
             ],
           },
