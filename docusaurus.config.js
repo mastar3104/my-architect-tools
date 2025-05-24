@@ -156,6 +156,36 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      metadata: [ // metadataプロパティを追加
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image', // Twitterカードの種類。'summary'（小さい画像）または 'summary_large_image'（大きい画像）が一般的
+        },
+        {
+          name: 'twitter:site',
+          content: '@mastar3104',
+        },
+        {
+          name: 'twitter:creator',
+          content: '@mastar3104'
+        },
+        {
+          property: 'og:title',
+          content: 'My architect tools'
+        },
+        {
+          property: 'og:description',
+          content: '個人的な学習記録とアーキテクトスキルの備忘録',
+        },
+        {
+          property: 'og:image',
+          content: 'https://mastar3104.github.io/my-architect-tools/img/kani2.png',
+        },
+        {
+          property: 'og:url',
+          content: 'https://mastar3104.github.io/my-architect-tools/',
+        },
+      ],
     }),
 };
 
