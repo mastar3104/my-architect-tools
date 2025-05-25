@@ -159,7 +159,7 @@ const config = {
       metadata: [ // metadataプロパティを追加
         {
           name: 'twitter:card',
-          content: 'summary_large_image', // Twitterカードの種類。'summary'（小さい画像）または 'summary_large_image'（大きい画像）が一般的
+          content: 'summary', // Twitterカードの種類
         },
         {
           name: 'twitter:site',
